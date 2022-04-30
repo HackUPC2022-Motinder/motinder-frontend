@@ -1,7 +1,5 @@
-import 'package:http/http.dart' as http;
-
 class MotorbikeController {
-  Future<MotorBike?> getMotorbike() async {
+  /*Future<MotorBike?> getMotorbike() async {
     var client = http.Client();
 
     var uri = Uri.parse('https://');
@@ -10,5 +8,5 @@ class MotorbikeController {
       var json = response.body;
       // return postFromJson(json);
     }
-  }
+  }*/
 }
