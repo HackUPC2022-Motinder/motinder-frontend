@@ -30,9 +30,10 @@ class _SellScreenState extends State<SellScreen> {
         elevation: 0,
         title: Center(
             child: Container(
+          margin: const EdgeInsets.only(right: 70),
           constraints: const BoxConstraints(maxHeight: 40),
           child: const Image(
-              image: AssetImage('assets/images/mundimoto-logo2.png')),
+              image: AssetImage('assets/images/compramos-tu-moto.png')),
         )),
       ),
       body: getBody(),
@@ -41,7 +42,7 @@ class _SellScreenState extends State<SellScreen> {
 
   Widget getBody() {
     return ListView(
-      padding: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(20),
       children: [
         const TitleTextField(
           text: 'Feature 1',
@@ -77,7 +78,9 @@ class _SellScreenState extends State<SellScreen> {
           child: ElevatedButton(
             child: const Text(
               'SELL',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+              ),
             ),
             onPressed: () {
               // call function tass motorbike
@@ -87,6 +90,8 @@ class _SellScreenState extends State<SellScreen> {
               );
             },
             style: ElevatedButton.styleFrom(
+                primary: Colors.blue,
+                onPrimary: Colors.black,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0))),
           ),

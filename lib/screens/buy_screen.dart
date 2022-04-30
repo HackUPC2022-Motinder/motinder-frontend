@@ -31,12 +31,13 @@ class _BuyScreenState extends State<BuyScreen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: Center(
-            child: Container(
+        title: Container(
+          margin: const EdgeInsets.only(right: 40),
+          alignment: Alignment.center,
           constraints: const BoxConstraints(maxHeight: 40),
           child: const Image(
               image: AssetImage('assets/images/mundimoto-logo2.png')),
-        )),
+        ),
       ),
       body: getBody(),
       bottomSheet: getFooter(),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:share_it/screens/sell_screen.dart';
+import 'package:share_it/screens/home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SellScreen(),
+      body: HomeView(),
     );
   }
 }
